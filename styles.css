@@ -4,7 +4,6 @@ body {
     margin-bottom: 20px 0;
     width: auto;
 }
-/*I am trying to change the pictures layout. Do not forget*/
 
 .header {
     background-color: white;
@@ -23,7 +22,6 @@ body {
     padding: 20px 30px 15px;
     margin: 10px 0 0;
 }
-/* adding flex-container */
 .main {
     background-color: white;
     height: 500px;
@@ -56,7 +54,7 @@ body {
     position: relative;
     display: inline-block;
 }
-.moviesNavButton > a:link, a:visited  {
+a:link, a:visited  {
     color: rgb(24, 22, 22);
     font-size: 35px;
     font-weight: bold;
@@ -67,7 +65,7 @@ body {
     margin: -5px 80px;
     text-transform: lowercase; 
 }
-.moviesNavButton > a:hover, a:active {
+a:hover, a:active {
     background-color: lightgray;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -83,29 +81,7 @@ body {
     position: relative;
     display: inline-block;
 }
-.theatresNavButton > a:link, a:visited  {
-    color: rgb(24, 22, 22);
-    font-size: 35px;
-    font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
-    padding: 3px 100px;
-    display: inline-block;
-    text-decoration: none;
-    margin: -5px 80px;
-    text-transform: lowercase; 
-}
-.theatresNavButton > a:hover, a:active {
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
-
-.flex-container > div {
+.marvel-shadow {
     position: relative;
     padding: 5px 0px;
     margin: 30px 38px;
