@@ -131,9 +131,9 @@ button:hover {
   /* end of button style */
 .marvel-shadow {
     position: relative;
-    padding: 5px 0px;
+    padding: 10px 0px;
     margin: 30px 38px;
-    width: 248px;
+    width: 260px;
     display: inline-block;
 }
 .marvel-shadow:hover{
@@ -141,7 +141,7 @@ button:hover {
 }
 .Alita-shadow {
     position: relative;
-    padding: 5px 0px;
+    padding: 10px 0px;
     margin: 30px 38px;
     width: 260px;
     display: inline-block;
@@ -151,7 +151,7 @@ button:hover {
 }
 .Romantic-shadow {
     position: relative;
-    padding: 5px 0px;
+    padding: 10px 0px;
     margin: 30px 38px;
     width: 260px;
     display: inline-block;
