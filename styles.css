@@ -23,6 +23,7 @@ body {
     padding: 20px 30px 15px;
     margin: 10px 0 0;
 }
+/* adding flex-container */
 .main {
     background-color: white;
     height: 500px;
@@ -51,6 +52,11 @@ body {
     vertical-align: middle;
 }    
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
 .moviesNavButton{
     position: relative;
     display: inline-block;
