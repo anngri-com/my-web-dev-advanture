@@ -54,39 +54,89 @@ body {
     position: relative;
     display: inline-block;
 }
-a:link, a:visited  {
-    color: rgb(24, 22, 22);
-    font-size: 35px;
-    font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
-    padding: 3px 100px;
-    display: inline-block;
-    text-decoration: none;
-    margin: -5px 80px;
-    text-transform: lowercase; 
-}
-a:hover, a:active {
-    background-color: lightgray;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.nav-theatres {
-    color: rgb(24, 22, 22);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    padding: 8px 16px;
-}
 .theatresNavButton {
     position: relative;
     display: inline-block;
 }
+
+/* buttons style */
+button {
+    size: 20px;
+    padding: 8px 60px;
+    margin: -15px;
+    display: inline-block;
+    background-color: transparent;
+}
+button:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#myBtn {
+    position: relative;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-right: 200px;
+}
+#mysecondBtn {
+    position: relative;
+    display: inline-block;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* end of button style */
 .marvel-shadow {
     position: relative;
     padding: 5px 0px;
     margin: 30px 38px;
-    width: 260px;
+    width: 248px;
     display: inline-block;
+}
+.marvel-shadow:hover{
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Alita-shadow {
@@ -95,6 +145,8 @@ a:hover, a:active {
     margin: 30px 38px;
     width: 260px;
     display: inline-block;
+}
+.Alita-shadow:hover{
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .Romantic-shadow {
@@ -103,20 +155,24 @@ a:hover, a:active {
     margin: 30px 38px;
     width: 260px;
     display: inline-block;
+}
+.Romantic-shadow:hover {
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .menWant-shadow {
     position: relative;
-    padding: 5px 0px;
+    padding: 10px 0px;
     margin: 30px 38px;
     width: 260px;
     display: inline-block;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.menWant-shadow:hover {
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 .marvel-shadow > img {
-    position: relative;
-    padding: 8px 10px;
-    display: inline-block;
+    display: inline;
+    
+    
 }
 .Alita-shadow > img {
     position: relative;
@@ -134,10 +190,6 @@ a:hover, a:active {
     display: inline-block;
 }
 
-.header-shadow {
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-}
 .movieTitle {
     display: block;
     background: #fff;
@@ -150,5 +202,4 @@ a:hover, a:active {
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0 30px;
-    
 }

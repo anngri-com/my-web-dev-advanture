@@ -14,12 +14,27 @@
             
             
     </div>
-    <div class="nav">
-        <div class="moviesNavButton">
-                <a href="default.asp" target="_blank">Movies</a>
-        </div>
-        <div class="theatresNavButton">
-                <a href="theatres" class="nav-theatres">Theatres 21+</a>
+    <div class="nav" style="text-align:center;">
+                <button id="myBtn">Movies</button>
+                <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <p>Some text in the Modal..</p>
+                                </div>
+                              
+                </div>
+
+                <button id="mysecondBtn">Theatres 21+</button>
+                <div id="mysecondModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <span class="close">&times;</span>
+                                  <p>Some text in the Modal..</p>
+                                </div>
+                 </div>             
         </div>
     <!--Trying to apply flex-container for the pictures--> 
     
@@ -27,19 +42,27 @@
     <div class="main">
         <div class="flex-container">
                 <div class="marvel-shadow">
-                <img src="captainMarvel.png" alt="marvelPoster" height="369px" width="238px" /> 
+                <a href="http://google.com" onclick="window.open(this.href, 'windowName', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">
+                        <img src="captainMarvel.png" alt="marvelPoster" height="369px" width="238px" />   
+                </a> 
                 <div class="movieTitle">Captain Marvel</div>            
         </div>
                 <div class="Alita-shadow">
-                <img src="Alita.png" alt="alitaPoster" height="369px" width="238px" />
+                <a href="default.asp" target="_top">
+                        <img src="Alita.png" alt="alitaPoster" height="369px" width="238px" />
+                </a>
                 <div class="movieTitle">Alita</div> 
         </div>
                 <div class="Romantic-shadow">
-                <img src="Romantic.png" alt="romanticPoster" height="369px" width="238px" />
+                <a href="default.asp" target="_top">
+                        <img src="Romantic.png" alt="romanticPoster" height="369px" width="238px" />
+                </a>
                 <div class="movieTitle">Isn't it Romantic</div> 
         </div>
                 <div class="menWant-shadow">
-                <img src="What Men Want.png" alt="whatMenWantPoster" height="369px" width="238px" />
+                <a href="default.asp" target="_top">
+                        <img src="What Men Want.png" alt="whatMenWantPoster" height="369px" width="238px" />
+                </a>
                 <div class="movieTitle">What Men Want</div>  
                 </div>    
         </div>
