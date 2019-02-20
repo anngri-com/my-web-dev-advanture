@@ -40,10 +40,9 @@
     </div>
     <div class="main" style="text-align:center;">
         <div class="flex-container">
-                <div class="marvel-shadow">
-                <a href="https://www.cinemark.com/captain-marvel?rclick=1&showDate=02/19/2019" onclick="window.open(this.href, 'windowName', 'width=1000, height=700, left=24, top=24, scrollbars, resizable'); return false;">
+                <div class="marvel-shadow" id="captain">
                         <img src="captainMarvel.png" alt="marvelPoster" height="369px" width="238px" />   
-                </a> 
+                         
                 <div class="movieTitle">Captain Marvel</div>            
         </div>
                 <div class="Alita-shadow">
@@ -67,9 +66,14 @@
         </div>
     </div>
     <script>
+            var captainPoster = document.getElementById('captain');
+            
                 // Get the modal
                 var modal = document.getElementById('myModal');
                 
+                captainPoster.onclick = function() {
+                  modal.style.display = "block";
+                }
                 // Get the button that opens the modal
                 var btn = document.getElementById("myBtn");
                 
