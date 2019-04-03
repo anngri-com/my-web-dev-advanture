@@ -1,22 +1,113 @@
 
 body {
-    background-color: lightgray;
+    background-color: #fcfcfc, 252, 252;
     margin-bottom: 20px 0;
     width: auto;
-    font-size: 1rem;
-    font-family: sans-serif;
     line-height: 10px;
-}
-h1 {
-    margin-bottom: .5rem;
+    height:1500px;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-origin: padding-box;
+    background-size: auto;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: "Roboto", sans-serif;
+    line-height: 14.2833px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding-right: 0px;
+    padding-top: 110px;
 }
 
-.display-1 {
-   font-size: 10em;
+.navBarHolder {
+    box-sizing: border-box;
+    line-height: 14.2833px;
+    color: rgba(0, 0, 0, 0.75);
+}
+.navbar-fixed-top {
+    z-index: 4000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 1px;
+    border-width: 0 0 1px;
+    width: 1160px;
+}
+.navbar {
+    min-height: 100px;
+    margin-bottom: 200px;
+    border: 1px solid transparent;
+    background-color: rgb(255, 255, 255);
+    border-image-slice: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    box-shadow: rgb(76, 76, 76) 0px -5px 20px 0px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.75);
+    height: 110px;
+    line-height: 14.2833px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 1160px;
+}
+.navbar-logo {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    max-width: auto;
+}
+.navbar-nav {
+    text-align: justify;
+    color: #b4111a;
+    text-transform: lowercase;
+    vertical-align: middle;
+}
+.nav-item {
+    font-size: 2.6em;
+    color: #b4111a;
+    text-transform: lowercase;
+    vertical-align: middle;
+    display: inline-block;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    margin-top: -40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    width: 1160px;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-repeat: repeat;
+    background-size: auto;
+    
+}
+.row {
+    padding: 30px 30px 15px;
+    margin-right: -15px;
+    margin-left: -15px;   
+}
+
+.img-responsive {
+    display: block;
+    max-width: 30%;
+    height: auto;
+}
 img {
     width: 100% \9;
     height: 400px;
     max-width: 100%;
+}
+
+.searchRow {
+    box-sizing: border-box;
 }

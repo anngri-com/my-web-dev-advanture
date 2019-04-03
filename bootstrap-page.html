@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Movies</title>
-      <link rel="stylesheet" href="bootstrap-styles.css">
-    
-      <script type="text/javascript" src="bootstrap.js"></script>
-    
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-      <script type="text/javascript">
-        window.onload = addMovies;
-      </script>
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-styles.css">
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    window.onload = addMovies;
+  </script>
+      <title>Movies</title>
   </head>
-  <body>
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-auto">
-            <h1 class="text-center display-1">Movies</h1>
+  <body >
+    <div class="navBarHolder">
+      <nav class="navbar navbar-expand-sm fixed-top" role="navigation">
+          <!-- Brand/logo -->
+          <div class="navbar-logo">
+              <img class="img-responsive" src="logo.png" alt="Logo">
           </div>
+          <!-- Links -->
+          <ul class="navbar-nav hidden-xs">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Theatres</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Tickets</a>
+                </li>
+            </ul>
+          <!--Search-->
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </nav>
     </div>
-  </div>
   <div class="container">
     <div id="nowShowingSlider" class="row">
+      <div class="searchRow">
+
+      </div>
     </div>
     <div id="textMovieTitle" class="row">
     </div>

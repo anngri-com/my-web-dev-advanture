@@ -39,7 +39,7 @@ function addOneMovieHtml(movie) {
   divLevel2.className = "col-sm-3";
 
   var p = document.createElement("p");
-  p.className = "h4";
+  p.className = "h4 text-sm-center";
   var node = document.createTextNode(movie.title);
   p.appendChild(node);
   divLevel2.appendChild(p);
