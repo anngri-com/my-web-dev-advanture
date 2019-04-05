@@ -20,11 +20,8 @@ body {
     padding-right: 0px;
     padding-top: 110px;
 }
-
-.navBarHolder {
-    box-sizing: border-box;
-    line-height: 14.2833px;
-    color: rgba(0, 0, 0, 0.75);
+.header {
+    display: block;
 }
 .navbar-fixed-top {
     z-index: 4000;
@@ -37,7 +34,6 @@ body {
 }
 .navbar {
     min-height: 100px;
-    margin-bottom: 200px;
     border: 1px solid transparent;
     background-color: rgb(255, 255, 255);
     border-image-slice: 100%;
@@ -56,23 +52,90 @@ body {
     padding-top: 30px;
     width: 1160px;
 }
-.navbar-logo {
+.containerTop {
+    padding: 30px;
+    height: 110px;
+    width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.headerLogo {
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    max-width: auto;
+    position: absolute;
+    left: 50px;
+    width: calc(100% / 8);
+    padding: 0px;
+}
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.navbarLinksHolder {
+    width: calc(100% - 550px);
+    padding: 0 30px;
+    margin-top: -6px;
+    float: left;
+    
+    position: absolute;
+    left: 250px;
+}
+.navbar-collapse.collapse {
+
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    
+    width: auto;
 }
 .navbar-nav {
+    width: 100%;
     text-align: justify;
+    line-height: .5em;
     color: #b4111a;
     text-transform: lowercase;
     vertical-align: middle;
 }
-.nav-item {
-    font-size: 2.6em;
-    color: #b4111a;
-    text-transform: lowercase;
-    vertical-align: middle;
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+ul.navbar-nav {
+
+    width: 100%;
+    text-align: justify;
+    line-height: .5em;
+
+}
+ul.navbar-nav>li {
     display: inline-block;
+    color: rgba(0,0,0,.75);
+    font-size: 2.4em;
+}
+
+.nav > li {
+    position: relative;
+    padding: 5px;
+}
+
+.navbarTopSearch {
+    width: 300px;
+    margin-top: 1px;
+    float: right;
+    text-align: right;
+    
+}
+.form-inline {
+    width: auto;
+    margin-top: 8px;
 }
 
 .container {
